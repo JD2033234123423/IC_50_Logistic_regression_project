@@ -66,7 +66,7 @@ def search_query():
         pass
         
         if len(df) < 2:
-            print("\nYou need at minimum two samples to train the dataset")
+            print("\nYou need at minimum two samples to train the dataset.")
             return search_query()
     else:
         print('\nInvalid input')
