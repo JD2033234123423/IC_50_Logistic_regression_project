@@ -156,9 +156,9 @@ def training_model(data, X):
     
     # Printing of metrics, to determine if model is trained correctly
     print("\nModel metrics: ")
-    # Compares the number of true positives to the positives predicted 
+    # Compares: TP / TP+ FP 
     print("Precision:", precision_score(y_test, y_pred))
-    # Compares the number of positives predicted to the true number of positives
+    # Compares: TP / TP + FN
     print("Recall:", recall_score(y_test, y_pred))
     # F1 score combines precision and recall, 2* (precision*recall)/(precision + recall)
     print("F1 score:", f1_score(y_test, y_pred))
