@@ -137,7 +137,7 @@ def training_model(data, X):
     # Adjust the IC50 dependent on dataset
     while True:
         try:
-            cutoff_value = int(input("\nSet the value the IC50 inactive threshold in nM: "))
+            cutoff_value = int(input("\nSet the value for the IC50 inactive threshold in nM: "))
             if cutoff_value < 1:
                 print("\nInvalid input, must be greater than 1")
                 return training_model(data, X)
