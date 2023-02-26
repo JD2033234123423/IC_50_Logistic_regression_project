@@ -142,8 +142,6 @@ def training_model(data, X):
             
     # Split the data into training and test sets, using a standard 80 train,20 test split
     x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-    # Train the logistic regression model using the data provided in the CSV file
-    print("\nBuilding model")
     # Displays the model building steps
     clf = LogisticRegression(max_iter=1_000_000, verbose=1)
     clf.fit(x_train, y_train)
