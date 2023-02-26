@@ -7,6 +7,6 @@ The training set used must be for the same biological target as the query.
 
 Please ensure: Pandas, numpy, RDkit, SKlearn and chembl_webresource_client are all installed before attempting to run the programme
 
-To run execute:
+To run, execute:
 
 'python3 IC_50_fingerprint_logistic_regression.py'
