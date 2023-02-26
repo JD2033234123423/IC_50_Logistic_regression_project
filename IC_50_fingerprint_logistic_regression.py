@@ -18,9 +18,9 @@ from chembl_webresource_client.new_client import new_client
 # Showing all dataframe rows
 pd.set_option('display.max_rows', None)
 
-# Quick instructions on the program
-input("""\t\nWelcome, this program is used to estimate the IC50 of a compound based on it's smiles notation.\nThis program works by building a logistic regression model from the CHEMBL database.
-      \nTo run this program, you need to search the CHEMBL database for the same biological target as the smiles query.\nThen, build the model by customising the IC50 value which will split the dataset for the model into active or inactive.
+# Quick instructions on the programme
+input("""\t\nWelcome, this programme is used to estimate the IC50 of a compound based on it's smiles notation.\nThis programme works by building a logistic regression model from the CHEMBL database.
+      \nTo run this programme, you need to search the CHEMBL database for the same biological target as the smiles query.\nThen, build the model by customising the IC50 value which will split the dataset for the model into active or inactive.
       \nFor whatever value you enter, any value above, but not including that, will be considered as inactive.
       \nOnly select a target of 'SINGLE PROTEIN' to build the model.
       \nTo continue, press ENTER: """)
