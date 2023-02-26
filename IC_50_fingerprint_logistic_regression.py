@@ -147,9 +147,10 @@ def training_model(data, X):
     clf.fit(x_train, y_train)
     y_pred = clf.predict(x_test)
     
-    # Reports the overall test accuracy
+    
     print("\nModel metrics: ")
-    print('Accuracy:', clf.score(x_test, y_test))
+    # Reports the overall fit of the model to the data
+    print('Fit:', clf.score(x_test, y_test))
     # Compares the number of true positives to the positives predicted 
     print("Precision:", precision_score(y_test, y_pred))
     # Compares the number of positives predicted to the true number of positives
