@@ -87,7 +87,13 @@ data = search_query()
 data['standard_value'] = pd.to_numeric(data['standard_value'], errors='coerce')
 data = data.drop(data[data.standard_value < 0].index, axis=0).reset_index(drop=True)
 print(data)
-print(f"\nLength of dataframe{len(data)}")
+print(f"\nDataset entries: {len(data)}")
+IC_50_mean = data['standard_value'].mean()
+IC_50_max = data['standard_value'].max()
+IC_50_min = data['standard_value'].min()
+IC_50_median = data['standard_value'].median()
+
+print(f'\nDataset IC50 Mean: {IC_50_mean} nM\nDataset IC50 Min: {IC_50_min} nM\nDataset IC50 Max: {IC_50_max} nM\nDataset IC50 Median: {IC_50_median} nM')
 
 # Defining the class for the QSAR assessment
 class Compound:
