@@ -65,8 +65,8 @@ def search_query():
     elif should_continue == 'y':
         pass
         
-        if len(df) < 2:
-            print("\nYou need at minimum two samples to train the dataset.")
+        if len(df) < 10:
+            print("\nDataset too small.")
             return search_query()
     else:
         print('\nInvalid input')
